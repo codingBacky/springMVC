@@ -1,0 +1,13 @@
+ <Context> 
+     <Resource name="jdbc/OracleDB" 
+         auth="Container"
+         type="javax.sql.DataSource" 
+         username="back" 
+         password="back"
+         driverClassName="oracle.jdbc.driver.OracleDriver"
+         factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+         url="jdbc:oracle:thin:@localhost:1521:xe"
+         maxActive="500" 
+         maxIdle="100"/> 
+ </Context>
+  <!-- 커낵션 풀을 500개 컨테이너가 만들어놓음 -->
